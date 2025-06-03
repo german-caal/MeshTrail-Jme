@@ -1,0 +1,19 @@
+MaterialDef Trail {
+    MaterialParameters {
+        Color Color
+        Texture2D Texture
+    }
+    Technique {
+
+        VertexShader   GLSL100: MatDefs/Trail/Trail.vert
+        FragmentShader GLSL100: MatDefs/Trail/Trail.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+
+        Defines {
+            COLOR: Color
+        }
+    }
+}
