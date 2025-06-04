@@ -54,7 +54,6 @@ public class MeshTrail extends Geometry {
      */
     public MeshTrail(AssetManager assetManager, Node p1, Node p2, int frames, Texture texture) {
         super("Trial", createPlane(frames));
-        mesh.setDynamic();
         this.p1 = p1;
         this.p2 = p2;
         this.frames = frames;
@@ -98,7 +97,6 @@ public class MeshTrail extends Geometry {
      */
     public MeshTrail(AssetManager assetManager, Node p1, Node p2, int frames, Texture texture, ColorRGBA color) {
         super("Trial", createPlane(frames));
-        mesh.setDynamic();
         this.p1 = p1;
         this.p2 = p2;
         this.frames = frames;
